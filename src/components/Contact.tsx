@@ -6,8 +6,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
+// Google Analytics type declaration
+declare global {
+  function gtag(...args: any[]): void;
+}
+
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Get form data
@@ -19,24 +24,54 @@ const Contact = () => {
     const service = formData.get('service') as string;
     const message = formData.get('message') as string;
     
-    // Create email content
-    const subject = `New Quote Request from ${firstName} ${lastName}`;
-    const emailBody = `
-Name: ${firstName} ${lastName}
-Email: ${email}
-Phone: ${phone}
-Service Needed: ${service}
-Message: ${message}
-    `;
-    
-    // Open default email client with pre-filled content
-    const mailtoLink = `mailto:jimboswindows1980@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-    window.open(mailtoLink);
-    
-    console.log('Form submitted - email opened');
+    try {
+      const response = await fetch('https://formspree.io/f/movnnnry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          phone,
+          service,
+          message,
+        }),
+      });
+
+      if (response.ok) {
+        // Track successful form submission
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'form_submit', {
+            event_category: 'Contact',
+            event_label: 'Quote Request Form',
+            value: 1
+          });
+        }
+        
+        alert('Thank you! Your message has been sent successfully.');
+        // Reset the form
+        (e.target as HTMLFormElement).reset();
+      } else {
+        alert('Sorry, there was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Sorry, there was an error sending your message. Please try again.');
+    }
   };
 
   const handlePhoneClick = () => {
+    // Track phone click event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Phone Click',
+        value: 1
+      });
+    }
+    
     const phoneNumber = "7919270128"; // UK mobile number without country code
     
     // Check if it's a mobile device
@@ -53,6 +88,15 @@ Message: ${message}
   };
 
   const handleWhatsAppClick = () => {
+    // Track WhatsApp click event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'WhatsApp Click',
+        value: 1
+      });
+    }
+    
     const phoneNumber = "7919270128";
     const message = "Hi! I'm interested in getting a quote for exterior cleaning services.";
     const whatsappUrl = `https://api.whatsapp.com/send?phone=44${phoneNumber}&text=${encodeURIComponent(message)}`;
@@ -60,6 +104,15 @@ Message: ${message}
   };
 
   const handleMessengerClick = () => {
+    // Track Messenger click event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Messenger Click',
+        value: 1
+      });
+    }
+    
     // Using the Facebook page ID from https://www.facebook.com/profile.php?id=100076596473868
     const facebookPageId = "100076596473868";
     const messengerUrl = `https://m.me/${facebookPageId}`;

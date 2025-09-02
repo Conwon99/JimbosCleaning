@@ -2,6 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
+// Google Analytics type declaration
+declare global {
+  function gtag(...args: any[]): void;
+}
+
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -52,7 +57,17 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  // Track CTA button click
+                  if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                      event_category: 'CTA',
+                      event_label: 'Hero Get Quote Button',
+                      value: 1
+                    });
+                  }
+                  scrollToSection('contact');
+                }}
                 className="bg-[#526bb0] hover:bg-blue-700 text-white font-manrope font-normal text-lg px-8 py-6 rounded-none"
               >
                 Get a free quote

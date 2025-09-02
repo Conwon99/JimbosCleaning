@@ -3,6 +3,11 @@ import { ArrowRight, Home, Wrench, Eye, Droplet, RefreshCw, Settings } from "luc
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
+// Google Analytics type declaration
+declare global {
+  function gtag(...args: any[]): void;
+}
+
 const Services = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -82,7 +87,17 @@ const Services = () => {
                   {service.description}
                 </p>
                 <button 
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => {
+                    // Track service quote button click
+                    if (typeof gtag !== 'undefined') {
+                      gtag('event', 'click', {
+                        event_category: 'Services',
+                        event_label: `${service.title} Quote Button`,
+                        value: 1
+                      });
+                    }
+                    scrollToSection('contact');
+                  }}
                   className="flex items-center text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors group"
                 >
                   {service.link}
