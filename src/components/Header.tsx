@@ -1,12 +1,34 @@
 
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LazyImage from "@/components/ui/lazy-image";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavigation = (sectionId: string) => {
+    // If we're on the home page, just scroll to the section
+    if (location.pathname === '/') {
+      scrollToSection(sectionId);
+    } else {
+      // If we're on a different page, navigate to home page with hash
+      navigate(`/#${sectionId}`);
+      // Small delay to ensure the page has loaded before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   };
 
@@ -31,34 +53,36 @@ const Header = () => {
       <div className="container mx-auto max-w-5xl py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img 
+            <LazyImage 
               src="/lovable-uploads/logo.png" 
+              webpSrc="/lovable-uploads/logo.webp"
               alt="Jimbo's Exterior Cleaning Logo" 
               className="h-20 w-auto -my-2"
+              loading="eager"
             />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
             <button 
-              onClick={() => scrollToSection('home')}
+              onClick={() => handleNavigation('home')}
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('services')}
+              onClick={() => handleNavigation('services')}
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
               Services
             </button>
             <button 
-              onClick={() => scrollToSection('process')}
+              onClick={() => handleNavigation('process')}
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
               Process
             </button>
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavigation('contact')}
               className="text-gray-700 hover:text-gray-900 font-manrope font-normal transition-colors"
             >
               Contact
@@ -74,7 +98,7 @@ const Header = () => {
               <span className="font-manrope font-normal text-[#526bb0]">07919270128</span>
             </button>
             <Button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavigation('contact')}
               className="bg-[#526bb0] hover:bg-blue-700 text-white font-manrope font-normal"
             >
               Get a free quote

@@ -1,14 +1,19 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://jimboscleaning.co.uk/sitemap.xml
+
+# Disallow admin or private areas (if any exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow important directories
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /lovable-uploads/
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1

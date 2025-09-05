@@ -2,6 +2,7 @@
 import { ArrowRight, Home, Wrench, Eye, Droplet, RefreshCw, Settings } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 // Google Analytics type declaration
 declare global {
@@ -21,37 +22,43 @@ const Services = () => {
       icon: <Droplet className="w-8 h-8 text-gray-600" />,
       title: "Roof Steam Cleaning",
       description: "Safe and effective steam cleaning to remove moss, algae, and dirt from your roof tiles.",
-      link: "Get a free quote"
+      link: "Get a free quote",
+      serviceLink: "/services/roof-steam-cleaning"
     },
     {
       icon: <Droplet className="w-8 h-8 text-gray-600" />,
       title: "Render Softwashing",
       description: "Gentle softwashing for render surfaces, removing stains and organic growth without damage.",
-      link: "Get a free quote"
+      link: "Get a free quote",
+      serviceLink: "/services/render-softwashing"
     },
     {
       icon: <RefreshCw className="w-8 h-8 text-gray-600" />,
       title: "Driveway Cleaning",
       description: "Professional driveway cleaning to restore the look of your property's entrance.",
-      link: "Get a free quote"
+      link: "Get a free quote",
+      serviceLink: "/services/driveway-cleaning"
     },
     {
       icon: <Droplet className="w-8 h-8 text-gray-600" />,
       title: "Gutter Cleaning",
       description: "Thorough gutter cleaning to keep your drainage systems clear and functional.",
-      link: "Get a free quote"
+      link: "Get a free quote",
+      serviceLink: "/services/gutter-cleaning"
     },
     {
       icon: <Droplet className="w-8 h-8 text-gray-600" />,
       title: "PVC White Cleaning",
       description: "Restore the shine to your PVC fascias, soffits, and gutters with our specialist cleaning.",
-      link: "Get a free quote"
+      link: "Get a free quote",
+      serviceLink: "/services/pvc-white-cleaning"
     },
     {
       icon: <Droplet className="w-8 h-8 text-gray-600" />,
       title: "Window Cleaning",
       description: "Streak-free window cleaning for sparkling results every time.",
-      link: "Get a free quote"
+      link: "Get a free quote",
+      serviceLink: "/services/window-cleaning"
     }
   ];
 
@@ -79,7 +86,12 @@ const Services = () => {
                   {service.icon}
                 </div>
                 <CardTitle className="text-xl font-manrope text-gray-900 mb-3 font-normal">
-                  {service.title}
+                  <Link 
+                    to={service.serviceLink}
+                    className="hover:text-[#526bb0] transition-colors"
+                  >
+                    {service.title}
+                  </Link>
                 </CardTitle>
               </CardHeader>
               <CardContent>
