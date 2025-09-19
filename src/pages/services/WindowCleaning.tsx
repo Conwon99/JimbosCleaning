@@ -48,7 +48,9 @@ const WindowCleaning = () => {
     { name: "Irvine", link: "/locations/irvine" },
     { name: "Kilmarnock", link: "/locations/kilmarnock" },
     { name: "Ayr", link: "/locations/ayr" },
-    { name: "Troon", link: "/locations/troon" }
+    { name: "Troon", link: "/locations/troon" },
+    { name: "Prestwick", link: "/locations/prestwick" },
+    { name: "Outer Glasgow", link: "#" }
   ];
 
   return (
@@ -156,7 +158,7 @@ const WindowCleaning = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 font-manrope mb-4">
-                    We provide window cleaning services across Ayrshire:
+                    We provide window cleaning services across Ayrshire and outer Glasgow:
                   </p>
                   <div className="grid grid-cols-2 gap-2">
                     {locations.map((location, index) => (

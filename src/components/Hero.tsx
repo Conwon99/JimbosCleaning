@@ -26,6 +26,7 @@ const Hero = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
+        aria-label="Hero section with background image of a clean roof"
       >
         <div className="absolute inset-0 bg-black/20"></div>
         
@@ -38,7 +39,7 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-5xl md:text-6xl font-manrope text-white mb-6 leading-tight"
             >
-              Jimbo's Exterior Cleaning
+              Professional Exterior Cleaning Services in Ayrshire & Glasgow
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
@@ -47,7 +48,7 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="text-base text-white/90 mb-8 font-manrope max-w-md"
             >
-              Transform your property's appearance and protect its value with Ayrshire's trusted exterior cleaning specialists. From <a href="/services/roof-steam-cleaning" className="text-white underline hover:text-blue-200">roof steam cleaning</a> to <a href="/services/driveway-cleaning" className="text-white underline hover:text-blue-200">driveway cleaning</a>, we use safe, effective methods to deliver outstanding results—every time. Serving <a href="/locations/irvine" className="text-white underline hover:text-blue-200">Irvine</a>, <a href="/locations/kilmarnock" className="text-white underline hover:text-blue-200">Kilmarnock</a>, and all of Ayrshire.
+              Transform your property's appearance and protect its value with Ayrshire's trusted exterior cleaning specialists. From <a href="/services/roof-steam-cleaning" className="text-white underline hover:text-blue-200">roof steam cleaning</a> to <a href="/services/driveway-cleaning" className="text-white underline hover:text-blue-200">driveway cleaning</a>, we use safe, effective methods to deliver outstanding results—every time. Serving all of Ayrshire including <a href="/locations/irvine" className="text-white underline hover:text-blue-200">Irvine</a>, <a href="/locations/ayr" className="text-white underline hover:text-blue-200">Ayr</a>, <a href="/locations/troon" className="text-white underline hover:text-blue-200">Troon</a>, <a href="/locations/prestwick" className="text-white underline hover:text-blue-200">Prestwick</a>, <a href="/locations/kilmarnock" className="text-white underline hover:text-blue-200">Kilmarnock</a> & outer Glasgow.
             </motion.p>
             
             <motion.div

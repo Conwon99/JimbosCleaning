@@ -12,6 +12,10 @@ import GutterCleaning from "./pages/services/GutterCleaning";
 import PVCWhiteCleaning from "./pages/services/PVCWhiteCleaning";
 import WindowCleaning from "./pages/services/WindowCleaning";
 import Irvine from "./pages/locations/Irvine";
+import Ayr from "./pages/locations/Ayr";
+import Troon from "./pages/locations/Troon";
+import Prestwick from "./pages/locations/Prestwick";
+import Kilmarnock from "./pages/locations/Kilmarnock";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +38,10 @@ const App = () => (
           
           {/* Location Pages */}
           <Route path="/locations/irvine" element={<Irvine />} />
+          <Route path="/locations/ayr" element={<Ayr />} />
+          <Route path="/locations/troon" element={<Troon />} />
+          <Route path="/locations/prestwick" element={<Prestwick />} />
+          <Route path="/locations/kilmarnock" element={<Kilmarnock />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

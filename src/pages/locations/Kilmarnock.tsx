@@ -6,7 +6,7 @@ import { ArrowLeft, MapPin, Phone, Clock, Droplet } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Irvine = () => {
+const Kilmarnock = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -24,7 +24,7 @@ const Irvine = () => {
   ];
 
   const nearbyAreas = [
-    { name: "Kilmarnock", link: "/locations/kilmarnock" },
+    { name: "Irvine", link: "/locations/irvine" },
     { name: "Ayr", link: "/locations/ayr" },
     { name: "Troon", link: "/locations/troon" },
     { name: "Prestwick", link: "/locations/prestwick" }
@@ -53,13 +53,13 @@ const Irvine = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-manrope font-normal text-gray-900 mb-6">
-              Exterior Cleaning Services in Irvine
+              Exterior Cleaning Services in Kilmarnock
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional exterior cleaning services in Irvine, Ayrshire. From roof steam cleaning to driveway cleaning, 
-              we provide comprehensive cleaning solutions for homes and businesses across Irvine, outer Glasgow, and surrounding areas. 
-              As your local Irvine-based cleaning specialists, we understand the unique challenges of maintaining properties 
-              in this historic town and the surrounding Ayrshire region.
+              Professional exterior cleaning services in Kilmarnock, Ayrshire. From roof steam cleaning to driveway cleaning, 
+              we provide comprehensive cleaning solutions for homes and businesses across Kilmarnock, outer Glasgow, and surrounding areas. 
+              Serving this historic town, we understand the unique challenges of maintaining properties in this 
+              vibrant community with its rich industrial heritage and modern developments.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -87,66 +87,63 @@ const Irvine = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
-                About Irvine, Ayrshire
+                About Kilmarnock, Ayrshire
               </h2>
               <div className="space-y-6 text-gray-600 font-manrope leading-relaxed">
                 <p>
-                  Irvine is a historic town located in North Ayrshire, Scotland, with a rich heritage dating back to the 12th century. 
-                  As the administrative center of North Ayrshire, Irvine combines traditional Scottish architecture with modern 
-                  developments, creating a diverse range of properties that require specialized cleaning approaches. The town's 
-                  location on the River Irvine and proximity to the coast presents unique maintenance challenges for property owners.
+                  Kilmarnock is a historic town located in East Ayrshire, Scotland, with a rich industrial heritage dating back 
+                  to the 17th century. The town is known for its traditional industries including textiles, engineering, and 
+                  whisky production, and has evolved into a modern commercial and residential center. Kilmarnock's diverse 
+                  architecture ranges from traditional Victorian and Edwardian buildings to modern developments, creating 
+                  unique cleaning challenges for property owners.
                 </p>
                 <p>
-                  The town's industrial heritage, including the former Irvine Royal Academy and the historic Irvine Harbour, 
-                  has left a legacy of traditional stone buildings and Victorian architecture. These historic properties, 
-                  particularly in areas like the Old Town and Fullarton, require careful cleaning methods that preserve 
-                  their character while maintaining their appearance. Modern developments in areas like Bourtreehill, 
-                  Girdle Toll, and Dreghorn present different cleaning challenges with contemporary materials and designs.
+                  The town's industrial past has left a legacy of traditional stone buildings and Victorian architecture, 
+                  particularly in areas like the town center, Riccarton, and New Farm Loch. These historic properties 
+                  require careful cleaning methods that preserve their character while maintaining their appearance. 
+                  Modern developments in areas like Bellfield, Onthank, and Grange require different cleaning approaches 
+                  with contemporary materials and designs.
                 </p>
                 <p>
-                  Irvine's position as a commuter town for Glasgow, combined with its growing retail and business sectors, 
-                  means many properties experience high foot traffic and environmental pollution. The town's proximity to 
-                  major transport links, including the A78 and A71 roads, contributes to increased dirt and grime buildup 
-                  on exterior surfaces, making regular professional cleaning essential for maintaining property values.
+                  Kilmarnock's position as a major commercial center for East Ayrshire means many properties experience 
+                  high foot traffic and environmental pollution. The town's proximity to major transport links, including 
+                  the A71 and A76 roads, contributes to increased dirt and grime buildup on exterior surfaces, making 
+                  regular professional cleaning essential for maintaining property values and appearance.
                 </p>
               </div>
             </div>
             
             <div>
               <h3 className="text-2xl font-manrope font-normal text-gray-900 mb-6">
-                Key Areas We Serve in Irvine
+                Key Areas We Serve in Kilmarnock
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div className="p-4 bg-gray-50 rounded-lg">
                     <h4 className="font-manrope font-normal text-gray-900 mb-2">Town Center</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Historic core with traditional buildings</p>
+                    <p className="text-sm text-gray-600 font-manrope">Historic core with Victorian and Edwardian buildings</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Bourtreehill</h4>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Riccarton</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Residential area with mixed property types</p>
+                  </div>
+                  <div className="p-4 bg-gray-50 rounded-lg">
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Bellfield</h4>
                     <p className="text-sm text-gray-600 font-manrope">Modern residential developments</p>
-                  </div>
-                  <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Girdle Toll</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Mixed residential and commercial area</p>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Dreghorn</h4>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Onthank</h4>
                     <p className="text-sm text-gray-600 font-manrope">Suburban residential area</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Fullarton</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Historic residential district</p>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Grange</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Mixed residential and commercial area</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Irvine Harbour</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Coastal properties and heritage buildings</p>
-                  </div>
-                  <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Outer Glasgow</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Extended service area coverage</p>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">New Farm Loch</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Historic area with traditional properties</p>
                   </div>
                 </div>
               </div>
@@ -161,7 +158,7 @@ const Irvine = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
-                Why Choose Us in Irvine?
+                Why Choose Us in Kilmarnock?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -169,12 +166,11 @@ const Irvine = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Local Irvine Expertise</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Kilmarnock Industrial Expertise</h3>
                     <p className="text-gray-600 font-manrope">
-                      Based right here in Irvine at 2 West Bowhouse Way, we understand the local climate, 
-                      building materials, and cleaning challenges specific to our hometown. Our team knows 
-                      Irvine's diverse neighborhoods, from the historic town center to modern developments 
-                      like Bourtreehill and Dreghorn.
+                      Based in Irvine, we understand the unique challenges of Kilmarnock's industrial heritage and modern development. 
+                      Our team is familiar with the town's diverse neighborhoods, from the historic town center to modern developments 
+                      in Bellfield and Onthank, ensuring the right cleaning approach for every property type.
                     </p>
                   </div>
                 </div>
@@ -184,11 +180,11 @@ const Irvine = () => {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Immediate Response</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Quick Kilmarnock Response</h3>
                     <p className="text-gray-600 font-manrope">
-                      As a local Irvine business, we provide the fastest response times in the area. 
-                      Whether you're in the town center, Girdle Toll, or Fullarton, we can be at your 
-                      property quickly with flexible scheduling that works around your busy lifestyle.
+                      Fast response times for Kilmarnock residents and businesses with flexible scheduling to suit your needs. 
+                      We understand Kilmarnock's busy commercial environment and work around your schedule to minimize 
+                      disruption to your daily routine.
                     </p>
                   </div>
                 </div>
@@ -198,11 +194,11 @@ const Irvine = () => {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Trusted Local Service</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Trusted Kilmarnock Service</h3>
                     <p className="text-gray-600 font-manrope">
-                      We've built our reputation serving Irvine residents and businesses with consistent, 
-                      high-quality results. From historic properties near Irvine Harbour to modern homes 
-                      in Bourtreehill, our local knowledge ensures the best cleaning approach for your property.
+                      Trusted by Kilmarnock homeowners and businesses for consistent, high-quality exterior cleaning results. 
+                      We've built our reputation serving properties from the historic town center to modern developments 
+                      in Grange, ensuring every Kilmarnock property receives the attention it deserves.
                     </p>
                   </div>
                 </div>
@@ -212,11 +208,11 @@ const Irvine = () => {
                     <Droplet className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Heritage Property Specialists</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Industrial Heritage Specialists</h3>
                     <p className="text-gray-600 font-manrope">
-                      Irvine's rich history means many properties require specialized care. We understand 
-                      the delicate nature of traditional stone buildings, Victorian architecture, and 
-                      heritage properties, using appropriate cleaning methods that preserve their character.
+                      Kilmarnock's rich industrial heritage means many properties require specialized care. We understand 
+                      the unique challenges of traditional industrial buildings, Victorian architecture, and heritage properties, 
+                      using appropriate cleaning methods that preserve their character while maintaining their appearance.
                     </p>
                   </div>
                 </div>
@@ -227,7 +223,7 @@ const Irvine = () => {
               <Card className="bg-gray-50">
                 <CardHeader>
                   <CardTitle className="text-2xl font-manrope font-normal text-gray-900">
-                    Our Irvine Location
+                    Our Kilmarnock Service Area
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -235,8 +231,8 @@ const Irvine = () => {
                     <div className="flex items-center space-x-3">
                       <MapPin className="w-5 h-5 text-[#526bb0]" />
                       <div>
-                        <p className="font-manrope font-normal text-gray-900">Address</p>
-                        <p className="text-gray-600 font-manrope">2 West Bowhouse Way, Irvine</p>
+                        <p className="font-manrope font-normal text-gray-900">Service Area</p>
+                        <p className="text-gray-600 font-manrope">Kilmarnock and surrounding areas</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -266,7 +262,7 @@ const Irvine = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
-            Irvine's Local Landmarks & Our Service Areas
+            Kilmarnock's Local Landmarks & Our Service Areas
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -275,24 +271,24 @@ const Irvine = () => {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Irvine Harbour</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Kilmarnock Town Center</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Properties near this historic harbour require specialized cleaning due to salt air exposure. 
-                    We provide gentle cleaning methods suitable for the traditional buildings in this heritage area.
+                    Properties in the historic town center require specialized cleaning due to high foot traffic and 
+                    environmental pollution. We provide gentle cleaning methods suitable for Victorian and Edwardian buildings.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Irvine Royal Academy</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">New Farm Loch Historic Area</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    The historic academy area features traditional stone buildings that require careful maintenance. 
+                    The historic New Farm Loch area features traditional properties that require careful maintenance. 
                     Our heritage cleaning expertise ensures these properties maintain their historic character.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Old Town Conservation Area</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Industrial Heritage Buildings</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Properties in Irvine's conservation area need specialized care to preserve their historic 
-                    appearance. We use appropriate cleaning methods that respect the area's heritage status.
+                    Properties with industrial heritage need specialized care to preserve their historic appearance. 
+                    We use appropriate cleaning methods that respect the area's industrial heritage status.
                   </p>
                 </div>
               </div>
@@ -304,24 +300,24 @@ const Irvine = () => {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Bourtreehill</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Bellfield Modern Developments</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Modern residential developments with contemporary materials. We provide comprehensive 
-                    cleaning services for these newer properties, ensuring they maintain their pristine appearance.
+                    Modern residential developments in Bellfield benefit from our comprehensive cleaning services, 
+                    ensuring these newer properties maintain their pristine appearance.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Girdle Toll Business District</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Onthank Residential Area</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Commercial properties in this busy area benefit from our professional cleaning services, 
-                    helping maintain Irvine's attractive business environment for residents and visitors.
+                    Suburban residential areas in Onthank benefit from our flexible cleaning approach, 
+                    handling everything from traditional homes to modern developments.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Dreghorn & Surrounding Areas</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Grange Business District</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Suburban residential areas with mixed property types. Our flexible approach ensures 
-                    we can handle everything from traditional homes to modern developments in these areas.
+                    Commercial properties in Grange benefit from our professional cleaning services, 
+                    helping maintain Kilmarnock's attractive business environment.
                   </p>
                 </div>
               </div>
@@ -334,7 +330,7 @@ const Irvine = () => {
       <section id="services" className="py-16 bg-gray-50">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
-            Services in Irvine
+            Services in Kilmarnock
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
@@ -350,12 +346,12 @@ const Irvine = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 font-manrope text-sm">
-                  Professional {service.name.toLowerCase()} services in Irvine and surrounding areas. 
-                  {service.name === "Roof Steam Cleaning" && " Essential for Irvine's mix of traditional and modern properties."}
-                  {service.name === "Render Softwashing" && " Perfect for both historic and contemporary rendered buildings in Irvine."}
-                  {service.name === "Driveway Cleaning" && " Ideal for properties in busy areas like Girdle Toll and the town center."}
-                  {service.name === "Gutter Cleaning" && " Crucial maintenance for Irvine's variable weather conditions."}
-                  {service.name === "PVC White Cleaning" && " Restores the bright appearance of windows and doors in all Irvine areas."}
+                  Professional {service.name.toLowerCase()} services in Kilmarnock and surrounding areas. 
+                  {service.name === "Roof Steam Cleaning" && " Essential for Kilmarnock's mix of traditional and modern properties."}
+                  {service.name === "Render Softwashing" && " Perfect for both historic and contemporary rendered buildings in Kilmarnock."}
+                  {service.name === "Driveway Cleaning" && " Ideal for properties in busy areas like the town center and business districts."}
+                  {service.name === "Gutter Cleaning" && " Crucial maintenance for Kilmarnock's variable weather conditions."}
+                  {service.name === "PVC White Cleaning" && " Restores the bright appearance of windows and doors in all Kilmarnock areas."}
                   {service.name === "Window Cleaning" && " Essential for both heritage properties and modern developments."}
                 </p>
               </Link>
@@ -389,31 +385,30 @@ const Irvine = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
-            Irvine's Climate & Cleaning Challenges
+            Kilmarnock's Climate & Cleaning Challenges
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-manrope font-normal text-gray-900 mb-4">
-                Local Weather Impact
+                Industrial & Urban Impact
               </h3>
               <div className="space-y-4 text-gray-600 font-manrope leading-relaxed">
                 <p>
-                  Irvine's location in North Ayrshire creates unique cleaning challenges. The town experiences 
-                  moderate coastal influences from the Firth of Clyde, with higher humidity levels and frequent 
-                  sea mists that can accelerate the growth of algae and moss on exterior surfaces. The River Irvine 
-                  also contributes to local moisture levels, particularly affecting properties in the town center 
-                  and harbour area.
+                  Kilmarnock's location in East Ayrshire creates unique cleaning challenges. The town experiences 
+                  moderate humidity levels and variable weather conditions that can accelerate the growth of algae, 
+                  moss, and lichen on exterior surfaces. The town's industrial heritage has left a legacy of 
+                  traditional stone buildings that require specialized cleaning approaches.
                 </p>
                 <p>
-                  The town's position as a commuter hub means increased traffic pollution from the A78 and A71 roads, 
+                  The town's position as a major commercial center means increased traffic pollution from the A71 and A76 roads, 
                   leading to faster buildup of dirt and grime on properties near these major routes. Areas like 
-                  Girdle Toll and the town center experience higher levels of environmental pollution, requiring 
+                  the town center and Grange experience higher levels of environmental pollution, requiring 
                   more frequent cleaning to maintain property appearance.
                 </p>
                 <p>
-                  Irvine's mix of historic and modern properties presents different challenges. Traditional stone 
-                  buildings in the Old Town and Fullarton areas are more susceptible to weathering and organic 
-                  growth, while modern developments in Bourtreehill and Dreghorn may have different material 
+                  Kilmarnock's mix of historic and modern properties presents different challenges. Traditional stone 
+                  buildings in the town center and New Farm Loch area are more susceptible to weathering and 
+                  organic growth, while modern developments in Bellfield and Onthank may have different material 
                   requirements and cleaning needs.
                 </p>
               </div>
@@ -425,9 +420,9 @@ const Irvine = () => {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Heritage Property Care</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Industrial Heritage Care</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Specialized cleaning methods for Irvine's historic buildings, preserving their character 
+                    Specialized cleaning methods for Kilmarnock's historic industrial buildings, preserving their character 
                     while maintaining their appearance and structural integrity.
                   </p>
                 </div>
@@ -435,21 +430,21 @@ const Irvine = () => {
                   <h4 className="font-manrope font-normal text-gray-900 mb-2">Traffic Pollution Treatment</h4>
                   <p className="text-gray-600 font-manrope text-sm">
                     Effective cleaning solutions for properties affected by road traffic pollution, 
-                    particularly in busy areas like Girdle Toll and the town center.
-                  </p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Coastal Environment Care</h4>
-                  <p className="text-gray-600 font-manrope text-sm">
-                    Appropriate cleaning methods for properties affected by coastal influences, 
-                    including those near Irvine Harbour and the River Irvine.
+                    particularly in busy areas like the town center and business districts.
                   </p>
                 </div>
                 <div className="p-4 bg-gray-50 rounded-lg">
                   <h4 className="font-manrope font-normal text-gray-900 mb-2">Mixed Property Expertise</h4>
                   <p className="text-gray-600 font-manrope text-sm">
                     Experience with both traditional and modern building materials, ensuring the right 
-                    cleaning approach for every type of property in Irvine.
+                    cleaning approach for every type of property in Kilmarnock.
+                  </p>
+                </div>
+                <div className="p-4 bg-gray-50 rounded-lg">
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Commercial Property Care</h4>
+                  <p className="text-gray-600 font-manrope text-sm">
+                    Specialized cleaning services for commercial properties in Kilmarnock's business districts, 
+                    helping maintain the town's professional appearance.
                   </p>
                 </div>
               </div>
@@ -463,10 +458,10 @@ const Irvine = () => {
         <div className="container mx-auto max-w-4xl px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-4">
-              Ready to Get Started in Irvine?
+              Ready to Get Started in Kilmarnock?
             </h2>
             <p className="text-xl text-gray-600 font-manrope">
-              Contact us today for a free quote on exterior cleaning services in Irvine.
+              Contact us today for a free quote on exterior cleaning services in Kilmarnock.
             </p>
           </div>
           
@@ -486,4 +481,4 @@ const Irvine = () => {
   );
 };
 
-export default Irvine;
+export default Kilmarnock;

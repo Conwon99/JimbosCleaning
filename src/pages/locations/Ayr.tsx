@@ -6,7 +6,7 @@ import { ArrowLeft, MapPin, Phone, Clock, Droplet } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Irvine = () => {
+const Ayr = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -24,8 +24,8 @@ const Irvine = () => {
   ];
 
   const nearbyAreas = [
+    { name: "Irvine", link: "/locations/irvine" },
     { name: "Kilmarnock", link: "/locations/kilmarnock" },
-    { name: "Ayr", link: "/locations/ayr" },
     { name: "Troon", link: "/locations/troon" },
     { name: "Prestwick", link: "/locations/prestwick" }
   ];
@@ -53,13 +53,13 @@ const Irvine = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-manrope font-normal text-gray-900 mb-6">
-              Exterior Cleaning Services in Irvine
+              Exterior Cleaning Services in Ayr
             </h1>
             <p className="text-xl text-gray-600 font-manrope mb-8 leading-relaxed">
-              Professional exterior cleaning services in Irvine, Ayrshire. From roof steam cleaning to driveway cleaning, 
-              we provide comprehensive cleaning solutions for homes and businesses across Irvine, outer Glasgow, and surrounding areas. 
-              As your local Irvine-based cleaning specialists, we understand the unique challenges of maintaining properties 
-              in this historic town and the surrounding Ayrshire region.
+              Professional exterior cleaning services in Ayr, Ayrshire. From roof steam cleaning to driveway cleaning, 
+              we provide comprehensive cleaning solutions for homes and businesses across Ayr, outer Glasgow, and surrounding areas. 
+              Serving the historic county town of Ayr, we understand the unique challenges of maintaining properties 
+              in this beautiful coastal town and the surrounding Ayrshire region.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -87,66 +87,61 @@ const Irvine = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
-                About Irvine, Ayrshire
+                About Ayr, Ayrshire
               </h2>
               <div className="space-y-6 text-gray-600 font-manrope leading-relaxed">
                 <p>
-                  Irvine is a historic town located in North Ayrshire, Scotland, with a rich heritage dating back to the 12th century. 
-                  As the administrative center of North Ayrshire, Irvine combines traditional Scottish architecture with modern 
-                  developments, creating a diverse range of properties that require specialized cleaning approaches. The town's 
-                  location on the River Irvine and proximity to the coast presents unique maintenance challenges for property owners.
+                  Ayr is the historic county town of Ayrshire, located on the west coast of Scotland at the mouth of the River Ayr. 
+                  This charming seaside town has a rich history dating back to the 12th century and is renowned for its beautiful 
+                  beaches, historic architecture, and vibrant town center. Ayr's coastal location and historic significance make it 
+                  a popular destination for both residents and visitors, but also present unique challenges for property maintenance.
                 </p>
                 <p>
-                  The town's industrial heritage, including the former Irvine Royal Academy and the historic Irvine Harbour, 
-                  has left a legacy of traditional stone buildings and Victorian architecture. These historic properties, 
-                  particularly in areas like the Old Town and Fullarton, require careful cleaning methods that preserve 
-                  their character while maintaining their appearance. Modern developments in areas like Bourtreehill, 
-                  Girdle Toll, and Dreghorn present different cleaning challenges with contemporary materials and designs.
+                  The town's diverse architecture ranges from traditional Georgian and Victorian buildings in the town center to 
+                  modern developments in areas like Alloway, Doonfoot, and Whitletts. Properties near the seafront, particularly 
+                  those along the Esplanade and in the historic Auld Kirk area, require specialized cleaning due to constant 
+                  exposure to salt air and coastal weather conditions.
                 </p>
                 <p>
-                  Irvine's position as a commuter town for Glasgow, combined with its growing retail and business sectors, 
-                  means many properties experience high foot traffic and environmental pollution. The town's proximity to 
-                  major transport links, including the A78 and A71 roads, contributes to increased dirt and grime buildup 
-                  on exterior surfaces, making regular professional cleaning essential for maintaining property values.
+                  Ayr's position as a major retail and business center for South Ayrshire means many properties experience high 
+                  foot traffic and environmental pollution. The town's proximity to major transport links, including the A77 and 
+                  A70 roads, contributes to increased dirt and grime buildup on exterior surfaces, making regular professional 
+                  cleaning essential for maintaining property values and appearance.
                 </p>
               </div>
             </div>
             
             <div>
               <h3 className="text-2xl font-manrope font-normal text-gray-900 mb-6">
-                Key Areas We Serve in Irvine
+                Key Areas We Serve in Ayr
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div className="p-4 bg-gray-50 rounded-lg">
                     <h4 className="font-manrope font-normal text-gray-900 mb-2">Town Center</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Historic core with traditional buildings</p>
+                    <p className="text-sm text-gray-600 font-manrope">Historic core with Georgian and Victorian buildings</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Bourtreehill</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Modern residential developments</p>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Alloway</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Historic village with traditional properties</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Girdle Toll</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Mixed residential and commercial area</p>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Doonfoot</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Coastal residential area with sea views</p>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Dreghorn</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Suburban residential area</p>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Whitletts</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Modern residential developments</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Fullarton</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Historic residential district</p>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Seafront</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Properties along the Esplanade and beach</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Irvine Harbour</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Coastal properties and heritage buildings</p>
-                  </div>
-                  <div className="p-4 bg-gray-50 rounded-lg">
-                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Outer Glasgow</h4>
-                    <p className="text-sm text-gray-600 font-manrope">Extended service area coverage</p>
+                    <h4 className="font-manrope font-normal text-gray-900 mb-2">Auld Kirk</h4>
+                    <p className="text-sm text-gray-600 font-manrope">Historic area with traditional buildings</p>
                   </div>
                 </div>
               </div>
@@ -161,7 +156,7 @@ const Irvine = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-6">
-                Why Choose Us in Irvine?
+                Why Choose Us in Ayr?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -169,12 +164,11 @@ const Irvine = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Local Irvine Expertise</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Ayr Coastal Expertise</h3>
                     <p className="text-gray-600 font-manrope">
-                      Based right here in Irvine at 2 West Bowhouse Way, we understand the local climate, 
-                      building materials, and cleaning challenges specific to our hometown. Our team knows 
-                      Irvine's diverse neighborhoods, from the historic town center to modern developments 
-                      like Bourtreehill and Dreghorn.
+                      Based in Irvine, we understand the unique coastal challenges of Ayr's seaside location. Our team is familiar 
+                      with the salt air effects, coastal weather patterns, and the specific cleaning needs of properties from the 
+                      town center to the seafront areas like Doonfoot and the Esplanade.
                     </p>
                   </div>
                 </div>
@@ -184,11 +178,11 @@ const Irvine = () => {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Immediate Response</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Quick Ayr Response</h3>
                     <p className="text-gray-600 font-manrope">
-                      As a local Irvine business, we provide the fastest response times in the area. 
-                      Whether you're in the town center, Girdle Toll, or Fullarton, we can be at your 
-                      property quickly with flexible scheduling that works around your busy lifestyle.
+                      Fast response times for Ayr residents and businesses with flexible scheduling to suit your needs. 
+                      We understand Ayr's busy summer season and tourist periods, working around your schedule to minimize 
+                      disruption to your daily routine.
                     </p>
                   </div>
                 </div>
@@ -198,11 +192,11 @@ const Irvine = () => {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Trusted Local Service</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Trusted Ayr Service</h3>
                     <p className="text-gray-600 font-manrope">
-                      We've built our reputation serving Irvine residents and businesses with consistent, 
-                      high-quality results. From historic properties near Irvine Harbour to modern homes 
-                      in Bourtreehill, our local knowledge ensures the best cleaning approach for your property.
+                      Trusted by Ayr homeowners and businesses for consistent, high-quality exterior cleaning results. 
+                      We've built our reputation serving properties from the historic town center to modern developments 
+                      in Whitletts, ensuring every Ayr property receives the attention it deserves.
                     </p>
                   </div>
                 </div>
@@ -212,11 +206,11 @@ const Irvine = () => {
                     <Droplet className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Heritage Property Specialists</h3>
+                    <h3 className="text-xl font-manrope font-normal text-gray-900 mb-2">Historic Property Specialists</h3>
                     <p className="text-gray-600 font-manrope">
-                      Irvine's rich history means many properties require specialized care. We understand 
-                      the delicate nature of traditional stone buildings, Victorian architecture, and 
-                      heritage properties, using appropriate cleaning methods that preserve their character.
+                      Ayr's rich history means many properties require specialized care. We understand the delicate nature 
+                      of Georgian and Victorian buildings, traditional stone properties, and heritage buildings, using 
+                      appropriate cleaning methods that preserve their historic character.
                     </p>
                   </div>
                 </div>
@@ -227,7 +221,7 @@ const Irvine = () => {
               <Card className="bg-gray-50">
                 <CardHeader>
                   <CardTitle className="text-2xl font-manrope font-normal text-gray-900">
-                    Our Irvine Location
+                    Our Ayr Service Area
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -235,8 +229,8 @@ const Irvine = () => {
                     <div className="flex items-center space-x-3">
                       <MapPin className="w-5 h-5 text-[#526bb0]" />
                       <div>
-                        <p className="font-manrope font-normal text-gray-900">Address</p>
-                        <p className="text-gray-600 font-manrope">2 West Bowhouse Way, Irvine</p>
+                        <p className="font-manrope font-normal text-gray-900">Service Area</p>
+                        <p className="text-gray-600 font-manrope">Ayr and surrounding areas</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -266,7 +260,7 @@ const Irvine = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
-            Irvine's Local Landmarks & Our Service Areas
+            Ayr's Local Landmarks & Our Service Areas
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -275,24 +269,24 @@ const Irvine = () => {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Irvine Harbour</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Ayr Town Center</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Properties near this historic harbour require specialized cleaning due to salt air exposure. 
-                    We provide gentle cleaning methods suitable for the traditional buildings in this heritage area.
+                    Properties in the historic town center require specialized cleaning due to high foot traffic and 
+                    environmental pollution. We provide gentle cleaning methods suitable for Georgian and Victorian buildings.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Irvine Royal Academy</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Alloway & Burns Heritage</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    The historic academy area features traditional stone buildings that require careful maintenance. 
-                    Our heritage cleaning expertise ensures these properties maintain their historic character.
+                    The historic village of Alloway, home to Robert Burns, features traditional properties that require 
+                    careful maintenance. Our heritage cleaning expertise ensures these properties maintain their historic character.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Old Town Conservation Area</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Auld Kirk Area</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Properties in Irvine's conservation area need specialized care to preserve their historic 
-                    appearance. We use appropriate cleaning methods that respect the area's heritage status.
+                    Properties near the historic Auld Kirk need specialized care to preserve their historic appearance. 
+                    We use appropriate cleaning methods that respect the area's heritage status.
                   </p>
                 </div>
               </div>
@@ -300,28 +294,28 @@ const Irvine = () => {
             
             <div>
               <h3 className="text-2xl font-manrope font-normal text-gray-900 mb-4">
-                Modern Development Areas
+                Coastal & Modern Areas
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Bourtreehill</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Ayr Seafront & Esplanade</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Modern residential developments with contemporary materials. We provide comprehensive 
-                    cleaning services for these newer properties, ensuring they maintain their pristine appearance.
+                    Properties along the beautiful seafront require regular maintenance due to constant exposure to 
+                    sea spray and coastal winds. Our coastal cleaning expertise ensures your property maintains its appearance.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Girdle Toll Business District</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Doonfoot Coastal Area</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Commercial properties in this busy area benefit from our professional cleaning services, 
-                    helping maintain Irvine's attractive business environment for residents and visitors.
+                    Coastal properties in Doonfoot with sea views require specialized cleaning due to salt air exposure. 
+                    We provide appropriate cleaning methods for these premium coastal properties.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Dreghorn & Surrounding Areas</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Whitletts Modern Developments</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Suburban residential areas with mixed property types. Our flexible approach ensures 
-                    we can handle everything from traditional homes to modern developments in these areas.
+                    Modern residential developments in Whitletts benefit from our comprehensive cleaning services, 
+                    ensuring these newer properties maintain their pristine appearance.
                   </p>
                 </div>
               </div>
@@ -334,7 +328,7 @@ const Irvine = () => {
       <section id="services" className="py-16 bg-gray-50">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
-            Services in Irvine
+            Services in Ayr
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
@@ -350,13 +344,13 @@ const Irvine = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 font-manrope text-sm">
-                  Professional {service.name.toLowerCase()} services in Irvine and surrounding areas. 
-                  {service.name === "Roof Steam Cleaning" && " Essential for Irvine's mix of traditional and modern properties."}
-                  {service.name === "Render Softwashing" && " Perfect for both historic and contemporary rendered buildings in Irvine."}
-                  {service.name === "Driveway Cleaning" && " Ideal for properties in busy areas like Girdle Toll and the town center."}
-                  {service.name === "Gutter Cleaning" && " Crucial maintenance for Irvine's variable weather conditions."}
-                  {service.name === "PVC White Cleaning" && " Restores the bright appearance of windows and doors in all Irvine areas."}
-                  {service.name === "Window Cleaning" && " Essential for both heritage properties and modern developments."}
+                  Professional {service.name.toLowerCase()} services in Ayr and surrounding areas. 
+                  {service.name === "Roof Steam Cleaning" && " Essential for Ayr's coastal properties exposed to salt air and algae growth."}
+                  {service.name === "Render Softwashing" && " Perfect for both historic and modern rendered buildings in Ayr."}
+                  {service.name === "Driveway Cleaning" && " Ideal for properties in busy areas like the town center and seafront."}
+                  {service.name === "Gutter Cleaning" && " Crucial maintenance for Ayr's coastal weather conditions."}
+                  {service.name === "PVC White Cleaning" && " Restores the bright appearance of windows and doors affected by coastal conditions."}
+                  {service.name === "Window Cleaning" && " Essential for properties with sea views and coastal exposure."}
                 </p>
               </Link>
             ))}
@@ -389,32 +383,30 @@ const Irvine = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-8 text-center">
-            Irvine's Climate & Cleaning Challenges
+            Ayr's Climate & Cleaning Challenges
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-manrope font-normal text-gray-900 mb-4">
-                Local Weather Impact
+                Coastal Weather Impact
               </h3>
               <div className="space-y-4 text-gray-600 font-manrope leading-relaxed">
                 <p>
-                  Irvine's location in North Ayrshire creates unique cleaning challenges. The town experiences 
-                  moderate coastal influences from the Firth of Clyde, with higher humidity levels and frequent 
-                  sea mists that can accelerate the growth of algae and moss on exterior surfaces. The River Irvine 
-                  also contributes to local moisture levels, particularly affecting properties in the town center 
-                  and harbour area.
+                  Ayr's coastal location on the Firth of Clyde creates unique cleaning challenges. The town experiences 
+                  higher humidity levels, frequent sea mists, and constant exposure to salt-laden air from the Irish Sea. 
+                  These conditions accelerate the growth of algae, moss, and lichen on exterior surfaces, particularly 
+                  on north-facing walls and shaded areas.
                 </p>
                 <p>
-                  The town's position as a commuter hub means increased traffic pollution from the A78 and A71 roads, 
-                  leading to faster buildup of dirt and grime on properties near these major routes. Areas like 
-                  Girdle Toll and the town center experience higher levels of environmental pollution, requiring 
-                  more frequent cleaning to maintain property appearance.
+                  The prevailing westerly winds carry salt particles that can corrode metal fixtures and cause staining 
+                  on brickwork, render, and stone surfaces. Properties closest to the seafront, especially those along 
+                  the Esplanade and in Doonfoot, require more frequent cleaning to maintain their appearance and 
+                  structural integrity.
                 </p>
                 <p>
-                  Irvine's mix of historic and modern properties presents different challenges. Traditional stone 
-                  buildings in the Old Town and Fullarton areas are more susceptible to weathering and organic 
-                  growth, while modern developments in Bourtreehill and Dreghorn may have different material 
-                  requirements and cleaning needs.
+                  Ayr's position as a major tourist destination means increased foot traffic and environmental pollution 
+                  in the town center, particularly during the summer months. The town's proximity to major transport 
+                  links, including the A77 and A70 roads, contributes to increased dirt and grime buildup on exterior surfaces.
                 </p>
               </div>
             </div>
@@ -425,31 +417,31 @@ const Irvine = () => {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Heritage Property Care</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Salt Air Protection</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Specialized cleaning methods for Irvine's historic buildings, preserving their character 
-                    while maintaining their appearance and structural integrity.
+                    We use specialized cleaning solutions that neutralize salt deposits and provide protective treatments 
+                    to prevent future buildup on your property's exterior surfaces.
                   </p>
                 </div>
                 <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Traffic Pollution Treatment</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Heritage Building Care</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Effective cleaning solutions for properties affected by road traffic pollution, 
-                    particularly in busy areas like Girdle Toll and the town center.
+                    Specialized cleaning methods for Ayr's historic buildings, preserving their character while 
+                    maintaining their appearance and structural integrity.
                   </p>
                 </div>
                 <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Coastal Environment Care</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Tourist Season Maintenance</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Appropriate cleaning methods for properties affected by coastal influences, 
-                    including those near Irvine Harbour and the River Irvine.
+                    We work around Ayr's busy tourist seasons, providing flexible scheduling to minimize disruption 
+                    to your business or home during peak periods.
                   </p>
                 </div>
                 <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Mixed Property Expertise</h4>
+                  <h4 className="font-manrope font-normal text-gray-900 mb-2">Marine-Safe Products</h4>
                   <p className="text-gray-600 font-manrope text-sm">
-                    Experience with both traditional and modern building materials, ensuring the right 
-                    cleaning approach for every type of property in Irvine.
+                    All our cleaning products are environmentally safe and won't harm the local marine ecosystem, 
+                    protecting both your property and Ayr's beautiful coastline.
                   </p>
                 </div>
               </div>
@@ -463,10 +455,10 @@ const Irvine = () => {
         <div className="container mx-auto max-w-4xl px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-manrope font-normal text-gray-900 mb-4">
-              Ready to Get Started in Irvine?
+              Ready to Get Started in Ayr?
             </h2>
             <p className="text-xl text-gray-600 font-manrope">
-              Contact us today for a free quote on exterior cleaning services in Irvine.
+              Contact us today for a free quote on exterior cleaning services in Ayr.
             </p>
           </div>
           
@@ -486,4 +478,4 @@ const Irvine = () => {
   );
 };
 
-export default Irvine;
+export default Ayr;

@@ -2,7 +2,7 @@
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LazyImage from "@/components/ui/lazy-image";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -53,13 +53,15 @@ const Header = () => {
       <div className="container mx-auto max-w-5xl py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <LazyImage 
-              src="/lovable-uploads/logo.png" 
-              webpSrc="/lovable-uploads/logo.webp"
-              alt="Jimbo's Exterior Cleaning Logo" 
-              className="h-20 w-auto -my-2"
-              loading="eager"
-            />
+            <Link to="/" className="hover:opacity-80 transition-opacity">
+              <LazyImage 
+                src="/lovable-uploads/logo.png" 
+                webpSrc="/lovable-uploads/logo.webp"
+                alt="Jimbo's Exterior Cleaning Logo" 
+                className="h-20 w-auto -my-2"
+                loading="eager"
+              />
+            </Link>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">

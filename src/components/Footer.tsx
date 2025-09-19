@@ -18,7 +18,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 font-manrope">
-              Expert exterior cleaning services across Ayrshire. Roofs, render, driveways, gutters, PVC, and more—safe, effective, and reliable.
+              Expert exterior cleaning services across Ayrshire and outer Glasgow. Roofs, render, driveways, gutters, PVC, and more—safe, effective, and reliable.
             </p>
           </div>
           
@@ -38,9 +38,11 @@ const Footer = () => {
             <h4 className="text-lg font-manrope font-normal mb-4">Service Areas</h4>
             <ul className="space-y-2 text-gray-400 font-manrope">
               <li><Link to="/locations/irvine" className="hover:text-white transition-colors">Irvine</Link></li>
-              <li><Link to="/locations/kilmarnock" className="hover:text-white transition-colors">Kilmarnock</Link></li>
               <li><Link to="/locations/ayr" className="hover:text-white transition-colors">Ayr</Link></li>
               <li><Link to="/locations/troon" className="hover:text-white transition-colors">Troon</Link></li>
+              <li><Link to="/locations/prestwick" className="hover:text-white transition-colors">Prestwick</Link></li>
+              <li><Link to="/locations/kilmarnock" className="hover:text-white transition-colors">Kilmarnock</Link></li>
+              <li className="text-gray-400">Outer Glasgow</li>
               <li className="text-gray-500">Mon-Fri: 8:00 AM - 6:00 PM</li>
               <li className="text-gray-500">Sat: 9:00 AM - 4:00 PM</li>
             </ul>
